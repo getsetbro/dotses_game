@@ -13,11 +13,70 @@
   </head>
   <body>
     <main>
-      <h1>Dotses Game</h1>
-      <p>Welcome to Dotses Game!</p>
-      <p>Enjoy the game!</p>
-      <p>and have fun!</p>
-      <p>and have fun!</p>  
+      <h1>Dotses</h1>
+      <p>Connect same-color dots to clear them from the board and score points.</p>
+
+      <hr />
+
+      <h2>How to Play</h2>
+
+      <h3>Connecting dots</h3>
+      <p>Drag your finger across the board to draw a path between dots of the same color. Lift your finger to commit the move — all dots in your path are cleared from the board and you score one point per dot.</p>
+      <ul>
+        <li>You must connect at least two dots.</li>
+        <li>Your path must stay on the same color.</li>
+        <li>You can only move to dots that are directly above, below, left, or right of your current dot (no diagonals).</li>
+        <li>You can backtrack by dragging back over your previous dot.</li>
+      </ul>
+
+      <h3>Closing a loop</h3>
+      <p>If you drag your path back to any dot already in your path, you close a <strong>loop</strong>. When you lift your finger after closing a loop:</p>
+      <ul>
+        <li><strong>Every dot of that color on the entire board is cleared</strong>, not just the ones in your path.</li>
+        <li>You score one point per dot removed.</li>
+      </ul>
+      <p>Closing a loop is the most powerful move in the game — aim for colors with many dots on the board.</p>
+
+      <h3>Encircling dots</h3>
+      <p>When you close a loop, any dots of <strong>other colors</strong> that are completely enclosed inside your loop are also cleared as a bonus. You score one point per encircled dot.</p>
+      <p>Draw your loop around a pocket of the board that contains dots you want to clear. The more dots you enclose, the higher your bonus.</p>
+
+      <hr />
+
+      <h2>Game Modes</h2>
+
+      <h3>Moves</h3>
+      <p>You have <strong>30 moves</strong> to score as many points as possible. Every time you lift your finger and commit a move, your move count goes down by one. The game ends when you reach zero.</p>
+
+      <h3>Daily Challenge</h3>
+      <p>A fixed puzzle — the same for everyone on the same day. Your score is submitted to the global leaderboard. You can only play the Daily Challenge once per day.</p>
+
+      <h3>Endless (coming soon)</h3>
+      <p>Play without a move limit.</p>
+
+      <hr />
+
+      <h2>Power-Ups</h2>
+      <table>
+        <thead>
+          <tr><th>Power-Up</th><th>How to use</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Clear a Color</strong></td><td>Tap the button, then tap any dot on the board. Every dot of that color is instantly removed. Does not cost a move.</td></tr>
+          <tr><td><strong>Add 5 Moves</strong></td><td>Adds five moves to your remaining count. Can only be used once per game.</td></tr>
+          <tr><td><strong>Remove Single Dot</strong></td><td>Double-tap any dot on the board to remove just that one dot.</td></tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <h2>Tips</h2>
+      <ul>
+        <li>Save the <strong>Clear a Color</strong> power-up for a color with many dots on the board.</li>
+        <li>Plan loops that encircle clusters of a different color for big bonus clears.</li>
+        <li>In Moves mode, longer paths score the same points per dot as short paths — but closing a loop can clear an entire color in one move, which is far more efficient.</li>
+        <li>After a loop clear, dots of that color are temporarily prevented from spawning in the refill, giving you more variety on the next turn.</li>
+      </ul>
     </main>
   </body>
 </html>
